@@ -64,24 +64,31 @@
     </header>
     <main class="main">
         <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content grid">
-                    <div class="home_social">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
                         <a href="https://www.linkedin.com/in/houssem-chaouachi-694874171/" target="_blank"
-                            class="home_social-icon">
+                            class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://github.com/Houssem-Chaouachi" target="_blank" class="home_social-icon">
+                        <a href="https://github.com/Houssem-Chaouachi" target="_blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
-                    <div class="home_img">
+                    <div class="home__img">
                         <?xml version="1.0" standalone="no"?>
                         <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#8A3FFC"
-                                d="M49.6,-37.9C61.5,-24.5,66.6,-4.1,63.6,16.6C60.5,37.2,49.2,58,32.5,65.1C15.9,72.2,-6.2,65.5,-27.3,55.7C-48.4,46,-68.4,33.1,-75.1,14.2C-81.8,-4.8,-75.2,-29.7,-60.5,-43.7C-45.7,-57.7,-22.9,-60.8,-2,-59.2C18.8,-57.6,37.6,-51.3,49.6,-37.9Z"
-                                transform="translate(100 100)" />
-                            <image class="home__blob-img" xlink:href="assets/img/about.png" />
+                            <mask id="mask0" mask-type="alpha">
+                            <path fill="#00000"
+                            d="M49.6,-37.9C61.5,-24.5,66.6,-4.1,63.6,16.6C60.5,37.2,49.2,58,32.5,65.1C15.9,72.2,-6.2,65.5,-27.3,55.7C-48.4,46,-68.4,33.1,-75.1,14.2C-81.8,-4.8,-75.2,-29.7,-60.5,-43.7C-45.7,-57.7,-22.9,-60.8,-2,-59.2C18.8,-57.6,37.6,-51.3,49.6,-37.9Z"
+                            transform="translate(100 100)" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path fill="#00000"
+                            d="M49.6,-37.9C61.5,-24.5,66.6,-4.1,63.6,16.6C60.5,37.2,49.2,58,32.5,65.1C15.9,72.2,-6.2,65.5,-27.3,55.7C-48.4,46,-68.4,33.1,-75.1,14.2C-81.8,-4.8,-75.2,-29.7,-60.5,-43.7C-45.7,-57.7,-22.9,-60.8,-2,-59.2C18.8,-57.6,37.6,-51.3,49.6,-37.9Z"
+                            transform="translate(100 100)" />
+                            <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/about.png" />
+                        </g>
                         </svg>
 
                     </div>
@@ -91,14 +98,19 @@
                         <p class="home__description">I was working as web developer for a year now.
                             I enjoy coding and solve peoples problems. I’m quietly confident,
                             naturally curious, and perpetually working on improving my skills.
+                        </p>
                             <a href="#contact" class="button button--flex">Contact Me <i
                                     class="uil uil-message button__icon"></i></a>
 
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="home__scroll">
-                    <a href="#about" class="home_scroll-button button--flex"></a>
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
                 </div>
             </div>
         </section>
