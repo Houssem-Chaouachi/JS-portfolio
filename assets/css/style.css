@@ -5,7 +5,7 @@
 :root{
     --header-height: 3rem;
     /* Colors  */
-    --hue-color:250 ;
+    --hue-color:230 ;
 
     --first-color:hsl(var(--hue-color), 69%, 61%);
     --first-color-second :hsl(var(--hue-color), 69%, 61%);
@@ -290,4 +290,8 @@ font-weight: var(--font-medium);
     font-size: 1.25rem;
     margin-left: var(--mb-0-25);
     transition: .3s;
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
 }
